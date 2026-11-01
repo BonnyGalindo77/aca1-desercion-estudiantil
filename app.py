@@ -2,8 +2,7 @@
 Alerta temprana de deserción estudiantil
 App de Streamlit del ACA 1 - Aprendizaje Automático (Especialización en IA, CUN)
 
-Integrantes: Bonny Darhyll Brayan Galindo Santos, Andrés Alberto López Herrera,
-             Camilo José Rodríguez Ayubi
+Grupo 7: Anternol de los Reyes Bedoya Naranjo, Bonny Darhyll Brayan Galindo Santos, Andrés Alberto López Herrera y Camilo José Rodríguez Ayubi
 Docente: Dr. Hamilton Rivera Flor
 
 Ejecutar en local:  streamlit run app.py
@@ -181,7 +180,7 @@ with st.sidebar:
     st.metric("F1 macro de este modelo (prueba)", num(fila_esc["F1 macro"], 3))
     st.metric("Detecta desertores (sensibilidad)", pct(fila_esc["Sensibilidad Deserción"]))
     st.divider()
-    st.markdown("**Equipo**\n\n- Bonny D. B. Galindo Santos\n- Andrés A. López Herrera\n- Camilo J. Rodríguez Ayubi")
+    st.markdown("**Equipo · Grupo 7**\n\n- Anternol de los R. Bedoya Naranjo\n- Bonny D. B. Galindo Santos\n- Andrés A. López Herrera\n- Camilo J. Rodríguez Ayubi")
     st.markdown("**Docente:** Dr. Hamilton Rivera Flor")
     st.caption("Datos: Realinho et al. (2021), UCI Machine Learning Repository, CC BY 4.0.")
 
