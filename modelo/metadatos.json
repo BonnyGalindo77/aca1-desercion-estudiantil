@@ -1,0 +1,264 @@
+{
+  "modelo": "Regresión logística",
+  "hiperparametros": {
+    "C": 0.1,
+    "class_weight": "balanced"
+  },
+  "version_sklearn": "1.9.1",
+  "semilla": 42,
+  "n_train": 3539,
+  "n_test": 885,
+  "metricas_test": {
+    "Exactitud": 0.7401,
+    "Exactitud balanceada": 0.6956,
+    "F1 macro": 0.6914,
+    "F1 ponderado": 0.7491,
+    "Precisión macro": 0.6971,
+    "Sensibilidad macro": 0.6956,
+    "ROC-AUC (OvR macro)": 0.8735,
+    "Kappa de Cohen": 0.5848,
+    "MCC": 0.5877
+  },
+  "ic95": {
+    "Exactitud": [
+      0.7141,
+      0.7684
+    ],
+    "F1 macro": [
+      0.6587,
+      0.7219
+    ],
+    "ROC-AUC (OvR macro)": [
+      0.8532,
+      0.8928
+    ]
+  },
+  "por_clase": {
+    "Deserción": {
+      "precision": 0.8223,
+      "recall": 0.7007,
+      "f1-score": 0.7567,
+      "support": 284.0
+    },
+    "Matriculado": {
+      "precision": 0.4151,
+      "recall": 0.5535,
+      "f1-score": 0.4744,
+      "support": 159.0
+    },
+    "Graduado": {
+      "precision": 0.8538,
+      "recall": 0.8326,
+      "f1-score": 0.8431,
+      "support": 442.0
+    }
+  },
+  "matriz_confusion": {
+    "clases": [
+      "Deserción",
+      "Matriculado",
+      "Graduado"
+    ],
+    "valores": [
+      [
+        199,
+        59,
+        26
+      ],
+      [
+        34,
+        88,
+        37
+      ],
+      [
+        9,
+        65,
+        368
+      ]
+    ]
+  },
+  "comparacion_cv": [
+    {
+      "modelo": "Regresión logística",
+      "F1 macro": 0.7216,
+      "± F1": 0.0047,
+      "Exactitud": 0.7593,
+      "Exactitud balanceada": 0.7313,
+      "ROC-AUC": 0.8911
+    },
+    {
+      "modelo": "Random Forest",
+      "F1 macro": 0.7166,
+      "± F1": 0.0181,
+      "Exactitud": 0.7754,
+      "Exactitud balanceada": 0.7097,
+      "ROC-AUC": 0.8928
+    },
+    {
+      "modelo": "SVM (kernel RBF)",
+      "F1 macro": 0.7138,
+      "± F1": 0.0173,
+      "Exactitud": 0.7502,
+      "Exactitud balanceada": 0.7244,
+      "ROC-AUC": 0.8897
+    },
+    {
+      "modelo": "Gradient Boosting",
+      "F1 macro": 0.7126,
+      "± F1": 0.0176,
+      "Exactitud": 0.7672,
+      "Exactitud balanceada": 0.7094,
+      "ROC-AUC": 0.8858
+    },
+    {
+      "modelo": "Árbol de decisión",
+      "F1 macro": 0.6828,
+      "± F1": 0.019,
+      "Exactitud": 0.7143,
+      "Exactitud balanceada": 0.6987,
+      "ROC-AUC": 0.8489
+    },
+    {
+      "modelo": "K vecinos más cercanos",
+      "F1 macro": 0.6266,
+      "± F1": 0.0076,
+      "Exactitud": 0.7316,
+      "Exactitud balanceada": 0.6161,
+      "ROC-AUC": 0.8492
+    },
+    {
+      "modelo": "Naive Bayes gaussiano",
+      "F1 macro": 0.3955,
+      "± F1": 0.0679,
+      "Exactitud": 0.3917,
+      "Exactitud balanceada": 0.4937,
+      "ROC-AUC": 0.8123
+    },
+    {
+      "modelo": "Referencia (aleatorio estratificado)",
+      "F1 macro": 0.3351,
+      "± F1": 0.0137,
+      "Exactitud": 0.3908,
+      "Exactitud balanceada": 0.3353,
+      "ROC-AUC": 0.5024
+    }
+  ],
+  "importancia": [
+    {
+      "variable": "s2_aprobadas",
+      "nombre": "S2 · unidades aprobadas",
+      "caida_f1": 0.1821,
+      "desv": 0.0138
+    },
+    {
+      "variable": "s1_aprobadas",
+      "nombre": "S1 · unidades aprobadas",
+      "caida_f1": 0.1035,
+      "desv": 0.0086
+    },
+    {
+      "variable": "s2_nota",
+      "nombre": "S2 · promedio de notas",
+      "caida_f1": 0.0352,
+      "desv": 0.009
+    },
+    {
+      "variable": "matricula_al_dia",
+      "nombre": "Matrícula al día",
+      "caida_f1": 0.0311,
+      "desv": 0.0068
+    },
+    {
+      "variable": "s2_inscritas",
+      "nombre": "S2 · unidades inscritas",
+      "caida_f1": 0.023,
+      "desv": 0.0077
+    },
+    {
+      "variable": "programa",
+      "nombre": "Programa",
+      "caida_f1": 0.0149,
+      "desv": 0.0064
+    },
+    {
+      "variable": "edad_ingreso",
+      "nombre": "Edad de ingreso",
+      "caida_f1": 0.0101,
+      "desv": 0.0043
+    },
+    {
+      "variable": "s1_inscritas",
+      "nombre": "S1 · unidades inscritas",
+      "caida_f1": 0.0074,
+      "desv": 0.0043
+    },
+    {
+      "variable": "s2_convalidadas",
+      "nombre": "S2 · unidades convalidadas",
+      "caida_f1": 0.0073,
+      "desv": 0.004
+    },
+    {
+      "variable": "modo_ingreso",
+      "nombre": "Modalidad de ingreso",
+      "caida_f1": 0.0065,
+      "desv": 0.0033
+    },
+    {
+      "variable": "becado",
+      "nombre": "Becado",
+      "caida_f1": 0.0059,
+      "desv": 0.0035
+    },
+    {
+      "variable": "s2_evaluaciones",
+      "nombre": "S2 · evaluaciones presentadas",
+      "caida_f1": 0.0039,
+      "desv": 0.0094
+    },
+    {
+      "variable": "deudor",
+      "nombre": "Deudor",
+      "caida_f1": 0.0037,
+      "desv": 0.0025
+    },
+    {
+      "variable": "s1_convalidadas",
+      "nombre": "S1 · unidades convalidadas",
+      "caida_f1": 0.0033,
+      "desv": 0.0038
+    },
+    {
+      "variable": "orden_opcion",
+      "nombre": "Orden de preferencia del programa",
+      "caida_f1": 0.0027,
+      "desv": 0.0055
+    }
+  ],
+  "escenarios": [
+    {
+      "escenario": "Al ingreso (sin notas)",
+      "variables de entrada": 23,
+      "Exactitud": 0.591,
+      "F1 macro": 0.5603,
+      "Sensibilidad Deserción": 0.5563,
+      "ROC-AUC": 0.7673
+    },
+    {
+      "escenario": "Tras el 1.er semestre",
+      "variables de entrada": 30,
+      "Exactitud": 0.7073,
+      "F1 macro": 0.6553,
+      "Sensibilidad Deserción": 0.6585,
+      "ROC-AUC": 0.8605
+    },
+    {
+      "escenario": "Tras el 1.er año (modelo principal)",
+      "variables de entrada": 36,
+      "Exactitud": 0.7401,
+      "F1 macro": 0.6914,
+      "Sensibilidad Deserción": 0.7007,
+      "ROC-AUC": 0.8735
+    }
+  ]
+}
