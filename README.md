@@ -3,7 +3,7 @@
 **ACA 1 · Aprendizaje Automático** — Especialización en Inteligencia Artificial, Corporación Unificada Nacional de Educación Superior (CUN)
 Docente: Dr. Hamilton Rivera Flor
 
-**Integrantes:** Bonny Darhyll Brayan Galindo Santos · Andrés Alberto López Herrera · Camilo José Rodríguez Ayubi
+**Grupo 7:** Anternol de los Reyes Bedoya Naranjo · Bonny Darhyll Brayan Galindo Santos · Andrés Alberto López Herrera · Camilo José Rodríguez Ayubi
 
 Solución de Machine Learning clásico (pilar **Educación**) que clasifica a cada estudiante en *Deserción*, *Matriculado* o *Graduado* a partir de sus datos de ingreso, su situación económica y su rendimiento del primer año, con despliegue en Streamlit.
 
